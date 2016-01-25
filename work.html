@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lincoln Wisely | Work</title>
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'
+   >
+   <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
+   <script type="jquery.js"></script>
+  </head>
+  <body>
+  	<div class="main-content">
+  		<div class="background-image">
+  		<nav>
+  	     <p><a href="contact.html">contact</a></p>
+        <p><a href="work.html" class="activepage">work</a></p>
+        <p><a href="about.html">about</a></p>
+        <p><a href="index.html">home</a></p>
+  		</nav>
+  		<h1>lincoln wisely</h1>
+  		</div>
+  	</div>
+  	<div class="secondary-content">
+  		<h2>Work</h2>
+      <ul class="social">
+        <li><h3><a href="#step-1">Copywriting</a></h3></li>
+        <li><h3><a href="#step-2">Design</h3></a></li>
+        <li><h3><a href="#step-3">Web Development</a></h3></li>
+      </ul>
+
+      <p class="document-subsection">I earned a BA in advertising with an emphasis in graphic design from Harding University in 2011. With skills in copywriting, design, social media and HTML/CSS,
+    my professional roles have teetered on both client and agency sides. </p>
+    <br>
+      <div class="content-block gotoStep1" id="#step-1">
+      <h3>Copywriting</h3>
+        <p>My lifelong love for literature has no doubt fueled a strong passion and interest
+      in copywriting. My past work has included: Brand guidelines, B2B and B2C
+      resources (Healthcare, Construction, Finance, SEO/PPC), case studies, social media
+      content, blog posts, press releases, newsletters, drip email campaigns and more.</p>
+
+ <!--      <p>A few examples include:</p>
+      <p><a href="tbd.com"> SEO Guide for Beginners</a></p>
+        <p><a href="tbd.com">Blog Post</a></p>
+        <p><a href="tbd.com"> Switch Post</a></p>
+        <p><a href="tbd.com"> Resource</a></p>
+    </div> -->
+    <br>
+    <div class="content-block" id="#step-2">
+      <h3>Design</h3>
+        <p>From banner ads to custom white papers layouts, my professional design
+        background is strongly tied to digital marketing. I also have experience with package
+        design, logo creation, brochures, brand standards, photography, infographics and
+        wireframe design.</p>
+    </div>
+    <br>
+    <div class="content-block" id="#step-3">
+    <h3>Web Development</h3>
+    <p>I’m currently a student of web development, and this site right here is the first I’ve
+    actually designed and deployed. But thanks to the brilliant organization <a href="https://www.launchcode.org/coder_girl" target="_blank">CoderGirl</a>, one
+    of many initiatives from <a href="https://www.launchcode.org/" target="_blank">LaunchCode</a>, I’m quickly deepening my abilities and
+    confidence. </p>
+
+  	</div>
+  	<footer>
+
+      <ul class="social">
+      <li class="alignleft"><a href="https://twitter.com/em_wisely" target="_blank" alt="twitter-icon"><img src="img/twitter.png"></a></li>
+      <li class="aligncenter"><a href="https://www.instagram.com/space_camp/" target="_blank" alt="instagram-icon"><img src="img/instagram.png"></a></li>
+      <li class="alignright"><a href="https://www.linkedin.com/in/emilywisely" target="_blank" alt="linkedin-icon"><img src="img/linkedin.png"></a></li>
+      </ul>
+      <p class="copyright">copyright &copy; 2015 lincoln wisely</p>
+
+
+    </footer>
+
+
+          <script>// Defaults
+          $('.document-subsection').hide();
+          $(this).addClass("active");;
+          $('#step-1').show();
+          // Step 1
+          $('.gotoStep1').click(function() {
+              $('.subsection-nav').removeClass('active');
+              $('.gotoStep1').addClass("active");
+              $('.document-subsection').hide();
+              $('#step-1').show();
+
+          });
+
+          // Etc.
+          </script>
+  </body>
+</html>
