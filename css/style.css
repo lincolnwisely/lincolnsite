@@ -87,16 +87,16 @@ font-family: 'Montserrat', sans-serif;
 font-size: 6em;
 text-align: center;
 color: #fff;
-/*display: block;*/
+display: block;
   position: absolute;
   top: 15%;
-  left:0%;
-  transform: translate(-50%, -50%);
   color: white;
    line-height: 1em;
-width: 100%
+width: 100%;
 
 }
+
+
 
 .background-image {
 margin: 0px;
