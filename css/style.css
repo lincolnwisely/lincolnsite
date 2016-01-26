@@ -89,12 +89,12 @@ text-align: center;
 color: #fff;
 /*display: block;*/
   position: absolute;
-  top: 25%;
-  left: 50%;
+  top: 15%;
+  left:0%;
   transform: translate(-50%, -50%);
   color: white;
    line-height: 1em;
-
+width: 100%
 
 }
 
