@@ -180,7 +180,7 @@ footer .social img {
 
 
 /* Align Simple Social Icons Centered */
-  .social ul.alignright,
+  /*.social ul.alignright,
 	.social ul.alignleft {
 		text-align: center;
 	}
@@ -189,7 +189,7 @@ footer .social img {
 	.social ul.alignleft li {
 		display: inline-block;
 	/*	float: none;*/
-	}
+	
 
 	/* Align everything center */
 /*	.alignright,
