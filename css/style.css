@@ -156,7 +156,7 @@ padding: 0px 200px;
 
 ul, li{
 text-align: center;
-/*margin: 10px 20px;*/
+padding: 0;
 }
 
 .content-block {
@@ -164,7 +164,6 @@ margin: 25px auto ;
 }
 
 footer {
-/*height: 80px;*/
 color: #aaa9ae;
 font-family: 'Roboto Mono', 'Courier', serif;
 font-size: .9em;
