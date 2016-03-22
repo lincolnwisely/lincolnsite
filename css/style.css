@@ -1,11 +1,8 @@
+/* =================================
+  Base Element Styles
+==================================== */
 * {
-
-
-}
-
-html {
-padding: 0px;
-margin: 0px;
+box-sizing: border-box;
 }
 
 body {
@@ -14,8 +11,9 @@ body {
 	font-weight: 400;
 	margin: 0px;
 	line-height:;
-
 }
+
+
 
 a {
 text-decoration: none;
@@ -23,13 +21,13 @@ color: #b921f1;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-}
+}*/
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 6em;
+	font-size: 2em;
 	padding: 0px;
 	margin: 0px;
 
@@ -43,7 +41,7 @@ h2 {
 	margin: 0px;
 	color: #b921f1 ;
 	text-align: center;
-	margin: 20px auto 0;
+	margin: 0 auto 0;
 }
 
 h3 {
@@ -53,22 +51,44 @@ h3 {
 	font-weight: 400;
 	padding: 0px;
 	margin: 0px;
-	color: #ec3800 ;
-}
-nav {
-height: 100px;
-overflow: auto;
-
+	color: #000 ;
 }
 
-nav p {
-font-family: 'Roboto Mono', 'Courier', serif;
+p {
+font-family: 'Roboto Mono', 'Courier' serif;
 font-size: 1em;
-float: right;
-color: #fff;
-padding: 0 14px;
-display: inline-block;
+color: #575962;
+line-height: 1.5em;
+font-weight: 400;
 
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-nav {
+  margin-top: 15px;
+	width: 100%;
+	margin: 15 auto;
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .85em;
+	color: #a0a0a0;
+	text-transform: uppercase;
+}
+
+.main-nav li {
+font-family: 'Montserrat', sans-serif;
+font-size: 1em;
+color: #fff;
+display: inline;
+/*margin-bottom: 15px;*/
+margin: 5px 10px;
 }
 
 nav a {
@@ -76,9 +96,8 @@ nav a {
 
 }
 
-nav a:hover {
-	color: #b921f1;
-
+.main-nav a:hover {
+	color: #000;
 }
 
 a.activepage {
@@ -92,15 +111,19 @@ font-size: 6em;
 text-align: center;
 color: #fff;
 display: block;
-  position: absolute;
-  top: 15%;
+position: absolute;
+top: 25%;
+  /*top: 15%;*/
   color: white;
    line-height: 1em;
 width: 100%;
-
 }
 
-
+.container {
+	background: #eee;
+	padding-top: 30px;
+	padding-bottom:20px
+}
 
 .background-image {
 margin: 0px;
@@ -108,69 +131,40 @@ padding: 0px;
 width: 100%;
 height: 600px;
 max-height: 500px;
+position: relative;
 background: url(../img/lincoln-header.jpg) center center no-repeat;
 background-size: cover;
-
 }
-
-/*.background-image:hover {
-margin: 0px;
-padding: 0px;
-width: 100%;
-height: 600px;
-max-height: 600px;
-background: url(../img/lincoln-color.jpg) center center no-repeat;
-background-size: cover;
-
-}*/
 
 .background-image a {
 	color: #fff;
-
-}
-
-/*.background-image a:hover {
-	color: #b921f1;
-
-}*/
-
-
-p {
-font-family: 'Roboto Mono', 'Courier' serif;
-font-size: 1em;
-color: #575962;
-line-height: 1.5em;
-font-weight: 400;
-
 }
 
 
-.secondary-content {
-
-color: #575962;
-padding: 0px 200px;
-
+.col {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 /* ___CHANGED NORMALIZE.CSS menu, ol, li to have a PADDING OF ZERO from 0 0 0 40px TO FIX THE CENTERING ISSUE WITH ULs */
 
-ul, li{
-text-align: center;
-padding: 0;
+
+.main-footer {
+	text-align: center;
+	padding: 1em 0;
+	background: #fff;
 }
 
-.content-block {
-margin: 25px auto ;
-}
-
-footer {
+/*footer {
 color: #aaa9ae;
 font-family: 'Roboto Mono', 'Courier', serif;
 font-size: .9em;
 text-align: center;
 margin: 50px 0 20px;
 
-}
+}*/
 
 
 
@@ -182,37 +176,11 @@ footer .social img {
 }
 
 
-/* Align Simple Social Icons Centered */
-  /*.social ul.alignright,
-	.social ul.alignleft {
-		text-align: center;
-	}
-
-	.social ul.alignright li,
-	.social ul.alignleft li {
-		display: inline-block;
-	/*	float: none;*/
-
-
-	/* Align everything center */
-/*	.alignright,
-	img.alignright,
-	.aligncenter,
-	img.aligncenter,
-	.alignleft,
-	img.alignleft {
-		display: block;
-		margin: 0 auto 10px;
-		float:none;
-	}
-*/
 	ul .social, li {
     list-style: none;
     text-decoration: none;
     display:inline-block;
-    position: relative;
-
-
+    /*position: relative;*/
     }
 
 
@@ -220,35 +188,35 @@ footer .social img {
 
 /* Media Queries -------------------- */
 
-@media (max-width: 1080px) {
-/*  .background-image h1 {
-    font-family: 'Montserrat', sans-serif;
-font-size: 5.5em;
-text-align: center;
-color: #fff;
-display: block;
-  position: absolute;
-  top: 23%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+@media (min-width: 769px) {
+	/*body {
+	padding-top: 70px;
+	}*/
+/*
+	  .main-header {
+	  position: fixed;
+	  background: #fff;
+	  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+	  width: 100%;
+	  top: 0;
+	  z-index: 1000;
+
+	}*/
 
 
-}*/
+	/*.main-nav {
+	float: right;
+	width: 100%;
+	}
+
+	.main-nav li {
+	  display: inline-block;
+	  margin-left: 15px;
+	}*/
 
 
-/*@media (max-width: 1024px) {
-  .main-content,
-  .secondary-content {
-    width: 90%;
-  }
-  .wildlife {
-    padding: 10% 12%;
-    margin: 50px 0 20px;
-  }
-}*/
 
-@media (max-width: 1080px) {
+@media (min-width: 658px) {
 /*  .main-content,
   .secondary-content {
     width: 100%;
@@ -257,20 +225,7 @@ display: block;
   }*/
 
 
-/*    .background-image h1 {
-    font-family: 'Montserrat', sans-serif;
-font-size: 4em;
-text-align: center;
-color: #fff;
-display: block;
-  position: absolute;
-  top: 28%;
-  left: 50%;
- transform: translate(-50%, -50%);
-  color: white;
 
-
-}*/
 
 /*  .main-header {
     max-height: 380px;
@@ -279,15 +234,47 @@ display: block;
 /*  .secondary-content{
     font-size: 1.3rem;
     margin: 0px 25px;*/
-  }
-  .background-image h1 {
-    font-size: 5em;
-    line-height: 1em;
-    text-align: center;
-     position: absolute;
-    top: 20%;
 
-  }
+
+	.main-nav {
+	  margin-top: 15px;
+		width: 100%;
+		margin: 25px auto;
+		text-align: center;
+	}
+
+
+	.main-nav a {
+		font-size: 1em;
+	}
+
+	.main-nav li {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	color: #fff;
+	display: inline;
+	/*margin-bottom: 15px;*/
+	margin: 5px 20px;
+	}
+
+
+	.background-image h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8em;
+	text-align: center;
+	color: #fff;
+	display: block;
+	  position: absolute;
+	  top: 25%;
+	  color: white;
+	   line-height: 1em;
+	width: 100%;
+	}
+
+	.col {
+	  width: 75%;
+	  margin: 0 auto;
+	}
 
 .secondary-content {
 padding: 0px 80px;
@@ -298,7 +285,7 @@ padding: 0px 80px;
   }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
 
 
@@ -321,10 +308,10 @@ font-size: .9em;
   display:block;
   float: none;
 
-  }
+  }*/
 
 
-@media (max-width: 400px) {
+/*@media (max-width: 400px) {
 	.background-image {
 	margin: 0px;
 	padding: 0px;
@@ -333,7 +320,7 @@ font-size: .9em;
 	background: url(../img/lincoln-header.jpg) center center no-repeat;
 	background-size: cover;
 
-	}
+	}*/
 
 
 	/*.background-image h1 {
