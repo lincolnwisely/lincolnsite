@@ -69,6 +69,8 @@ font-weight: 400;
 
 /* ---- Navigation ---- */
 
+
+
 .main-nav {
   margin-top: 15px;
 	width: 100%;
@@ -86,9 +88,9 @@ font-weight: 400;
 font-family: 'Montserrat', sans-serif;
 font-size: 1em;
 color: #fff;
-display: inline;
+display: block;
 /*margin-bottom: 15px;*/
-margin: 5px 10px;
+margin: 16px 10px;
 }
 
 nav a {
@@ -176,71 +178,53 @@ footer .social img {
 }
 
 
-	ul .social, li {
-    list-style: none;
-    text-decoration: none;
-    display:inline-block;
-    /*position: relative;*/
-    }
+.social li {
+  list-style: none;
+  text-decoration: none;
+  display:inline-block;
+  /*position: relative;*/
+  }
+/*
+.social li {}
 
+		ul .social, li {
+	    list-style: none;
+	    text-decoration: none;
+	    display:inline-block;
+	    /*position: relative;*/
+	    }*/
 
 
 
 /* Media Queries -------------------- */
 
+
+
+
 @media (min-width: 769px) {
 	/*body {
 	padding-top: 70px;
 	}*/
-/*
-	  .main-header {
-	  position: fixed;
-	  background: #fff;
-	  box-shadow: 0 1px 4px rgba(0,0,0,.4);
-	  width: 100%;
-	  top: 0;
-	  z-index: 1000;
+}
 
-	}*/
-
-
-	/*.main-nav {
-	float: right;
-	width: 100%;
-	}
+@media (min-width: 390px) {
 
 	.main-nav li {
 	  display: inline-block;
 	  margin-left: 15px;
-	}*/
+	}
 
+
+}
 
 
 @media (min-width: 658px) {
-/*  .main-content,
-  .secondary-content {
-    width: 100%;
-    padding: 0px;
-    border-top: none;
-  }*/
-
-
-
-
-/*  .main-header {
-    max-height: 380px;
-    padding: 50px 25px 0;
-  }*/
-/*  .secondary-content{
-    font-size: 1.3rem;
-    margin: 0px 25px;*/
-
 
 	.main-nav {
 	  margin-top: 15px;
 		width: 100%;
 		margin: 25px auto;
-		text-align: center;
+		/*text-align: center;*/
 	}
 
 
@@ -252,7 +236,6 @@ footer .social img {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	color: #fff;
-	display: inline;
 	/*margin-bottom: 15px;*/
 	margin: 5px 20px;
 	}
@@ -277,7 +260,7 @@ footer .social img {
 	}
 
 .secondary-content {
-padding: 0px 80px;
+	padding: 0px 80px;
 
 }
   .main-footer {
@@ -285,9 +268,13 @@ padding: 0px 80px;
   }
 }
 
-/*@media (max-width: 768px) {
+@media (max-width: 400px) {
 
 
+
+
+
+/*
 
 .secondary-content {
 padding: 0px 30px;
