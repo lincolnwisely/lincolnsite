@@ -196,6 +196,14 @@ footer .social img {
 
 
 
+.gallery ul {
+	list-style: none;
+	}
+
+.gallery ul li img {
+    max-width: 100%;
+		margin-top: 15%;
+	}
 /* Media Queries -------------------- */
 
 
