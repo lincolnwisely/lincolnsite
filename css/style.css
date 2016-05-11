@@ -195,10 +195,9 @@ footer .social img {
 	    }*/
 
 
-
-.gallery ul {
-	list-style: none;
-	}
+section.gallery ul {
+    list-style:  none;
+}
 
 .gallery ul li img {
     max-width: 100%;
