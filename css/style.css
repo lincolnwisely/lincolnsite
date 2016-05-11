@@ -5,6 +5,18 @@
 box-sizing: border-box;
 }
 
+legend {
+display: inline;
+width: auto;
+padding: 0;
+margin: 0;
+font-size: medium;
+line-height: normal;
+color: #000000;
+border: 0;
+border-bottom: none;
+}
+
 body {
 	width: 100%;
 	font-family: 'Montserrat', sans-serif;
@@ -26,7 +38,7 @@ color: #b921f1;
 }*/
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif ;
 	font-size: 2em;
 	padding: 0px;
 	margin: 0px;
@@ -110,6 +122,7 @@ a.activepage {
 .background-image h1 {
 font-family: 'Montserrat', sans-serif;
 font-size: 6em;
+font-weight: 700;
 text-align: center;
 color: #fff;
 display: block;
@@ -121,7 +134,7 @@ top: 25%;
 width: 100%;
 }
 
-.container {
+.meat {
 	background: #eee;
 	padding-top: 30px;
 	padding-bottom:20px
@@ -147,6 +160,8 @@ background-size: cover;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 30px;
+
+	padding-top: 20px;
   text-align: center;
 }
 
@@ -194,9 +209,11 @@ footer .social img {
 	    /*position: relative;*/
 	    }*/
 
+section.gallery {
+	width: 60%;
+}
 
-
-.gallery ul {
+section.gallery ul {
 	list-style: none;
 	}
 
