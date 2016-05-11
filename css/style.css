@@ -5,7 +5,7 @@
 box-sizing: border-box;
 }
 
-legend {
+/*legend {
 display: inline;
 width: auto;
 padding: 0;
@@ -15,11 +15,10 @@ line-height: normal;
 color: #000000;
 border: 0;
 border-bottom: none;
-}
+}*/
 
 body {
 	width: 100%;
-	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	margin: 0px;
 	line-height:;
@@ -60,14 +59,14 @@ h3 {
 
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
-	font-weight: 400;
-	padding: 0px;
+	font-weight: 600;
+	padding: 20px 0 0;
 	margin: 0px;
-	color: #000 ;
+	color: #575962 ;
 }
 
 p {
-font-family: 'Roboto Mono', 'Courier' serif;
+font-family: 'Roboto Mono', 'Courier', serif;
 font-size: 1em;
 color: #575962;
 line-height: 1.5em;
@@ -144,7 +143,7 @@ width: 100%;
 margin: 0px;
 padding: 0px;
 width: 100%;
-height: 600px;
+height: 300px;
 max-height: 500px;
 position: relative;
 background: url(../img/lincoln-header.jpg) center center no-repeat;
@@ -213,6 +212,10 @@ section.gallery {
 	width: 60%;
 }
 
+section.gallery ul {
+	list-style: none;
+}
+
 
 .gallery ul li img {
     max-width: 100%;
@@ -240,6 +243,11 @@ section.gallery {
 }
 
 
+@media (min-width: 390px) {
+
+
+
+
 @media (min-width: 658px) {
 
 	.main-nav {
@@ -262,6 +270,17 @@ section.gallery {
 	margin: 5px 20px;
 	}
 
+
+	.background-image {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 500px;
+	max-height: 500px;
+	position: relative;
+	background: url(../img/lincoln-header.jpg) center center no-repeat;
+	background-size: cover;
+	}
 
 	.background-image h1 {
 	font-family: 'Montserrat', sans-serif;
