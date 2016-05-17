@@ -2,7 +2,7 @@
 // make background dark
 // center image
 // revert back to normal when clicked
-var $overlay = $("<div id="overlay"></div>");
+var $overlay = $('<div id="overlay"></div>');
 var $image = $('<img>');
 var $caption = $('<p></p>');
 
@@ -11,7 +11,7 @@ $overlay.append($image);
 //add caption
 $overlay.append($caption);
 
-$("body").append($overlay);
+$(".test").append($overlay);
 
 
 

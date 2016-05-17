@@ -1,4 +1,9 @@
-    
+<?php
+$title = "Work | Lincoln Wisely";
+
+$active="work";
+include ('inc/header.php');
+?>
     <div class="meat  clearfix">
 
       <div class="col ">
@@ -56,3 +61,7 @@
       </div>
     </div>
     </div>
+
+  <?php
+  include ('inc/footer.php');
+  ?>
