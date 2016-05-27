@@ -50,6 +50,12 @@ li {
 
 }
 
+.thanks {
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Roboto Mono', 'Courier', serif;
+}
+
 p.author {
 
 	margin-left: 50px;
