@@ -1,10 +1,29 @@
+.container {
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-right: 50px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.info {
+  font-family: 'Roboto Mono', 'Courier', serif;
+  font-size: 12px;
+  padding: 10px 20px 0 10px;
+}
+
+li {
+  list-style: none;
+}
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   width: 90%;
-  margin-top: 10%;
-  justify-content: space-between;
+  margin-top: 8%;
+  justify-content: center;
   /*margin-top: 10%;*/
 
 }
@@ -12,10 +31,61 @@
 img {
   max-width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .cracker {
   display: flex;
   margin-top: 2%;
-  
+
+}
+
+
+/* Animations */
+
+.shake {
+	animation: shake 2s;
+}
+
+
+@keyframes shake {
+
+
+}
+
+
+
+.rotate {
+	animation: rotate 2s;
+}
+
+
+
+@keyframes rotate {
+
+
+}
+
+
+.grow {
+	animation: grow 2s;
+}
+
+
+
+@keyframes grow {
+	0% {}
+
+}
+
+
+
+.disappear {
+	animation: disappear 2s;
+}
+
+
+@keyframes disappear {
+
+
 }

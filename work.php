@@ -22,7 +22,7 @@ include ('inc/header.php');
       <p>I’m currently a student of web development, and this site right here is the first I’ve
       actually designed and deployed. My <a href="http://webberwisely.com">wedding website</a> is another one in the works. But thanks to the brilliant organization <a href="https://www.launchcode.org/coder_girl" target="_blank">CoderGirl</a>, one
       of many initiatives from <a href="https://www.launchcode.org/" target="_blank">LaunchCode</a>, I’m quickly deepening my abilities and
-      confidence. </p>
+      confidence. Here are a couple more <em>simple</em> projects: <a href="http://lincolnwisely.com/make-more-exciting.html" target="_blank">Make More Exciting</a> and <a href="http://lincolnwisely.com/dog-toggle.html" target="_blank">Dog Toggle</a>. </p>
 
       <h3>Design</h3>
         <p>From banner ads to custom white papers layouts, my professional design

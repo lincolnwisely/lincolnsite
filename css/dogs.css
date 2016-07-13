@@ -1,0 +1,33 @@
+.container {
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-right: 50px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.info {
+	font-family: 'Roboto Mono', 'Courier', serif;
+	font-size: 12px;
+	padding: 10px 20px 0 10px;
+	/*flex-grow: 12;*/
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+li {
+	list-style: none;
+
+}
+
+p {
+  font-family: 'Roboto Mono', 'Courier', serif;
+  font-size: 12px;
+  padding: 10px 20px 0 10px;
+  text-align: center;
+}
