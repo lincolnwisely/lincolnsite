@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+       <link href="css/shopping.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+
+    <div class="container center-block">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h1>Shopping List</h1>
+
+          <form action="shopping-list.html" method="post">
+            <fieldset>
+              <legend>Build Your List</legend>
+                Add new item:
+                <input type="text" name="item"> <br>
+                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                  <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                    <div class="input-group-addon">.00</div>
+                  </div>
+              </fieldset>
+            <!-- CATEGORIES -->
+            <fieldset>
+              <legend>Select a Category</legend>
+                <input type="radio" name="category" value="Produce"> Produce<br>
+                <input type="radio" name="category" value="Beverage"> Beverage<br>
+                <input type="radio" name="category" value="Bakery"> Bakery<br>
+                <input type="radio" name="category" value="Dairy"> Dairy<br>
+                <input type="radio" name="category" value="Meat"> Meat<br>
+                <input type="radio" name="category" value="Frozen"> Frozen<br>
+                <input type="radio" name="category" value="Dry Goods"> Dry Goods<br>
+                <input type="radio" name="category" value="Canned Goods"> Canned Goods<br>
+                <input type="radio" name="category" value="Cleaners"> Cleaners<br>
+                <input type="radio" name="category" value="Personal Care"> Personal Care<br>
+                <input type="radio" name="category" value="Other"> Other
+              </fieldset>
+          </form>
+    </div>
+  </div>
+</div>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/list.js" type="text/javascript" charset="utf-8"> </script>
+</body>
+
+</html>
