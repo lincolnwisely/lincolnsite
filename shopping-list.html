@@ -16,38 +16,68 @@
     <div class="container center-block">
 
       <div class="row">
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-8">
           <h1>Shopping List</h1>
 
-          <form action="shopping-list.html" method="post">
+          <!-- <form method="post"> -->
             <fieldset>
-              <legend>Build Your List</legend>
-                Add new item:
-                <input type="text" name="item"> <br>
-                <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                <label class="sr-only" for="new-item">Add Item</label>
+                    <input type="text" class="form-control" id="new-item" placeholder="Add an item...">
+                    <br>
+                <label class="sr-only" for="cost">Amount (in dollars)</label>
                   <div class="input-group">
                     <div class="input-group-addon">$</div>
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                    <input type="text" class="form-control" id="cost" placeholder="Estimated cost (round to the nearest dollar)">
                     <div class="input-group-addon">.00</div>
                   </div>
               </fieldset>
+
             <!-- CATEGORIES -->
-            <fieldset>
+            <!-- <fieldset>
               <legend>Select a Category</legend>
-                <input type="radio" name="category" value="Produce"> Produce<br>
-                <input type="radio" name="category" value="Beverage"> Beverage<br>
-                <input type="radio" name="category" value="Bakery"> Bakery<br>
-                <input type="radio" name="category" value="Dairy"> Dairy<br>
-                <input type="radio" name="category" value="Meat"> Meat<br>
-                <input type="radio" name="category" value="Frozen"> Frozen<br>
-                <input type="radio" name="category" value="Dry Goods"> Dry Goods<br>
-                <input type="radio" name="category" value="Canned Goods"> Canned Goods<br>
-                <input type="radio" name="category" value="Cleaners"> Cleaners<br>
-                <input type="radio" name="category" value="Personal Care"> Personal Care<br>
-                <input type="radio" name="category" value="Other"> Other
-              </fieldset>
-          </form>
+                <label class="radio-inline">
+                    <input type="radio" name="category" value="Produce"> Produce<br>
+                    <input type="radio" name="category" value="Beverages"> Beverage<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="category" value="Baked Goods"> Bakery<br>
+                    <input type="radio" name="category" value="Dairy"> Dairy<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="category" value="Meat"> Meat<br>
+                    <input type="radio" name="category" value="Frozen"> Frozen<br>
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="category" value="Dry Goods"> Dry Goods<br>
+                    <input type="radio" name="category" value="Canned Goods"> Canned Goods<br>
+                </label>
+
+                <br>
+                    <input type="radio" name="category" value="Other"> Other
+              </fieldset> -->
+              <button type="submit" class="btn btn-success" id="addItemButton">Add to List</button>
+        <div class="verticalLine">
+        </div>
+          <!-- </form> -->
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h3>What to Buy:</h3>
+                <ol id="shoppingList">
+
+                </ol>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+
+                <h3>Total Cost:</h3>
+                <div id="totalCost">
+                </div>
+            </div>
+        </div>
     </div>
+
   </div>
 </div>
 
