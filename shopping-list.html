@@ -20,42 +20,15 @@
           <h1>Shopping List</h1>
 
           <!-- <form method="post"> -->
-            <fieldset>
-                <label class="sr-only" for="new-item">Add Item</label>
-                    <input type="text" class="form-control" id="new-item" placeholder="Add an item...">
+                    <input type="text" class="form-control" id="newItem" placeholder="Add an item...">
                     <br>
-                <label class="sr-only" for="cost">Amount (in dollars)</label>
                   <div class="input-group">
                     <div class="input-group-addon">$</div>
-                    <input type="text" class="form-control" id="cost" placeholder="Estimated cost (round to the nearest dollar)">
+                    <input type="number" class="form-control" id="costEstimate" placeholder="Estimated cost (round to the nearest dollar)">
                     <div class="input-group-addon">.00</div>
                   </div>
-              </fieldset>
 
-            <!-- CATEGORIES -->
-            <!-- <fieldset>
-              <legend>Select a Category</legend>
-                <label class="radio-inline">
-                    <input type="radio" name="category" value="Produce"> Produce<br>
-                    <input type="radio" name="category" value="Beverages"> Beverage<br>
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="category" value="Baked Goods"> Bakery<br>
-                    <input type="radio" name="category" value="Dairy"> Dairy<br>
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="category" value="Meat"> Meat<br>
-                    <input type="radio" name="category" value="Frozen"> Frozen<br>
-                </label>
-                <label class="radio-inline">
-                    <input type="radio" name="category" value="Dry Goods"> Dry Goods<br>
-                    <input type="radio" name="category" value="Canned Goods"> Canned Goods<br>
-                </label>
-
-                <br>
-                    <input type="radio" name="category" value="Other"> Other
-              </fieldset> -->
-              <button type="submit" class="btn btn-success" id="addItemButton">Add to List</button>
+              <button type="submit" class="btn btn-success" id="addItemButton" >Add to List</button>
         <div class="verticalLine">
         </div>
           <!-- </form> -->
