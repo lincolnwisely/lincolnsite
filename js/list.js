@@ -4,14 +4,6 @@ var addItemButton = document.getElementById("addItemButton");
 // var addButton = document.getElementsByTagName("button")[0];
 var listBuild = document.getElementById("shoppingList");
 var totalPrice = document.getElementById("totalCost");
-var total = myarr.reduce(function(a, b) {
-  return a + b;
-}, 0);
-
-// function addTo() {
-//    myarr.push(document.getElementById("costEstimate").value);
-//    console.log(myarr); //to confirm it has been added to the array
-// }
 
 // VARIABLE TO CONVERT ARRAY TO NUMBER (or function??)
 // Function TO TOTAL ARRAY
@@ -25,22 +17,25 @@ var li = document.createElement("li");
 li.innerHTML = item + ": " + "$" + cost;
 console.log(cost);
 listBuild.appendChild(li);
-var p = document.createElement("p");
-p.innerHTML = "$ " + cost;
-totalPrice.appendChild(p);
+
 myarr.push(costInput.value);
 itemInput.value = " ";
-costInput.value = null;
+costInput.value = null; // clear field one submit button is pressed
 itemInput.focus();
-arrToIntegers(myarr);
+arrToIntegers(myarr); // calling function below – works! Visible in console
 // totalCost(myarr);
-console.log(total);
+var total = myarr.reduce(function(a, b) { // add values in array together
+  return a + b;
+}, 0);
+// var p = document.createElement("p"); // instead of creating element.. just update!!!
+// totalPrice.appendChild(p);
+totalPrice.innerHTML = "$ " + total;
 
-// costInput.value = " ";
 }
 
 var myarr = [];
 
+// change array values from strings to integers
 function arrToIntegers() {
 for (var i=0; i<myarr.length; i++) {
     myarr[i] = parseInt(myarr[i], 10);
@@ -49,12 +44,4 @@ for (var i=0; i<myarr.length; i++) {
 }
 
 
-
 addItemButton.onclick = addItem;
-
-
-function totalCost() {
-for ( var i = 0; i < myarr.length; i++ ){
- total + myarr[i];
- }
- }
